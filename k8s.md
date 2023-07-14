@@ -38,3 +38,18 @@ Port Forward:
 ```
 kubectl -n <project> port-forward svc/<service> <external port>:<internal port> 
 ```
+
+
+
+Get Pod events:
+
+```
+kubectl -n <project> get events --output json
+```
+
+
+Get Log from previous Pod:
+
+```
+kubectl -n <project> logs <pod> --previous 
+```
