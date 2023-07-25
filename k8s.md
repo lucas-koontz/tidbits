@@ -3,10 +3,11 @@
 ## Knowledge
 
 Determine the DNS name format:
+
 The DNS name of a Kubernetes service is usually in the format: `<service-name>.<namespace>.svc.cluster.local`. Here:
 
-`<service-name>` is the name of your service.
-`<namespace>` is the Kubernetes namespace where the service is deployed. If your service is in the default namespace, you can omit the namespace from the DNS name.
+- `<service-name>` is the name of your service.
+- `<namespace>` is the Kubernetes namespace where the service is deployed. If your service is in the default namespace, you can omit the namespace from the DNS name.
 
 
 
