@@ -1,5 +1,18 @@
 # Kubernetes
 
+## Knowledge
+
+Determine the DNS name format:
+The DNS name of a Kubernetes service is usually in the format: `<service-name>.<namespace>.svc.cluster.local`. Here:
+
+`<service-name>` is the name of your service.
+`<namespace>` is the Kubernetes namespace where the service is deployed. If your service is in the default namespace, you can omit the namespace from the DNS name.
+
+
+
+## Commands
+
+
 List pods in a project:
 
 ```
@@ -10,7 +23,7 @@ kubectl -n <project> get pods
 Show logs for a pod:
 ```
 kubectl -n <project> logs -f <pod> 
-# if pod has more than one container add "-c <container>"
+# If the pod has more than one container add "-c <container>"
 ```
 
 Restart pods:
@@ -48,7 +61,7 @@ kubectl -n <project> get events --output json
 ```
 
 
-Get Log from previous Pod:
+Get Log from the previous Pod:
 
 ```
 kubectl -n <project> logs <pod> --previous 
