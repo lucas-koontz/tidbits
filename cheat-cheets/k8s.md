@@ -14,56 +14,49 @@ The DNS name of a Kubernetes service is usually in the format: `<service-name>.<
 ## Commands
 
 
-List pods in a project:
+- List pods in a project:
 
 ```
 kubectl -n <project> get pods
 ```
   
   
-Show logs for a pod:
+- Show logs for a pod:
 ```
 kubectl -n <project> logs -f <pod> 
 # If the pod has more than one container add "-c <container>"
 ```
 
-Restart pods:
-
+- Restart pods:
 ```
 kubectl -n <project> rollout restart deploy/<service>
 ```
 
 
-Scale Deploy:
-
+- Scale Deploy:
 ```
 kubectl -n <project> scale deploy <service> --replicas=<total replicas>
 ```
 
-Delete pods:
-
+- Delete pods:
 ```
 kubectl -n <project> delete pod <pod>
 ```
 
 
-Port Forward:
-
+- Port Forward:
 ```
 kubectl -n <project> port-forward svc/<service> <external port>:<internal port> 
 ```
 
 
-
-Get Pod events:
-
+- Get Pod events:
 ```
 kubectl -n <project> get events --output json
 ```
 
 
-Get Log from the previous Pod:
-
+- Get Log from the previous Pod:
 ```
 kubectl -n <project> logs <pod> --previous 
 ```

@@ -1,2 +1,3 @@
-# cheat-sheet
-Programming Cheat Sheets
+# Tidbits
+
+Saving small pieces of knowledge.
