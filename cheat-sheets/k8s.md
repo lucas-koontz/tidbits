@@ -60,3 +60,8 @@ kubectl -n <project> get events --output json
 ```
 kubectl -n <project> logs <pod> --previous 
 ```
+
+- Describe resource:
+```
+kubectl -n <project> describe <resource-type> <resource-name>
+```
