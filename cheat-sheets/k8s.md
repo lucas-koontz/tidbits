@@ -65,3 +65,8 @@ kubectl -n <project> logs <pod> --previous
 ```
 kubectl -n <project> describe <resource-type> <resource-name>
 ```
+
+- Enter container:
+```
+kubectl -n <project> exec --stdin --tty <pod> -it -- sh
+```````            
